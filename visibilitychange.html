@@ -6,29 +6,16 @@
 </head>
 <body>
 	<div>121212</div>
-	<script>
-// 	document.addEventListener('visibilitychange',function(){ //浏览器切换事件
-// 	    if(document.visibilityState=='hidden') { //状态判断
-// 	        //normal_title=document.title;
-// 	        console.log(1212)
-// 	        document.title = '标题二'; 
-// 	    }else {
-// 	    	console.log(3232)
-// 	        document.title = '标题一';
-// 	    }
-// 	});
-// 	alert(1)
-// 	navigator.share({
-// 	    title: '121212',
-// 	    url: document.querySelector('link[rel=canonical]') ?
-// 	        document.querySelector('link[rel=canonical]').href :
-// 	        window.location.href
-// 	})
-// 	alert(2)
-
 	<script src="//cdn.jsdelivr.net/npm/eruda"></script>
-	<script>eruda.init();</script> 
-
+	
+	<script>
+		eruda.init();
+		navigator.share({
+		    title: '121212',
+		    url: document.querySelector('link[rel=canonical]') ?
+			document.querySelector('link[rel=canonical]').href :
+			window.location.href
+		})
 	</script>
 	
 </body>
